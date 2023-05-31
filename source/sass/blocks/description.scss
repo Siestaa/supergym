@@ -1,0 +1,214 @@
+.description {
+  padding: 120px 0 7px 60px;
+  max-width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    padding: 100px 21px 16px;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+  }
+
+  @include vp-767 {
+    padding: 63px 0 70px;
+    align-items: flex-start;
+  }
+
+  &__text-sector {
+    max-width: 32.32%;
+    margin-right: 7.72%;
+
+    @include vp-1199 {
+      max-width: none;
+      margin: 0 0 43px;
+    }
+
+    @include vp-767 {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-family: $ff-main-object;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 39px 0 7px;
+    color: $color-text;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      text-align: start;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__area-text {
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-text;
+    margin: 0;
+
+    @include vp-1199 {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+
+    @include vp-767 {
+      text-align: start;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text-wrapper {
+    margin: 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include vp-1199 {
+      text-align: center;
+      width: 76.04%;
+      margin: 0 auto;
+    }
+
+    @include vp-767 {
+      text-align: start;
+      margin: 0;
+      width: 89.96%;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-text;
+    margin: 0;
+
+    @include vp-1199 {
+      &:not(:first-of-type) {
+        display: none;
+      }
+    }
+  }
+
+  & picture {
+    width: 59.93%;
+
+    @include vp-1199 {
+      width: 100%;
+    }
+
+    @include vp-767 {
+      width: 100vw;
+      transform: translateX(-15px);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__video {
+    position: relative;
+    top: -113px;
+    left: 8px;
+    margin: 0 auto;
+    width: 33.1%;
+    height: fit-content;
+    line-height: 0;
+    padding-top: 20.73%;
+
+    @include vp-1199 {
+      width: 39.23%;
+      top: -84px;
+      left: 0;
+      padding-top: 24.63%;
+    }
+
+    @include vp-767 {
+      width: 100vw;
+      top: 0;
+      transform: translateX(-15px);
+      padding-top: 57.59%;
+    }
+  }
+
+  &__video-play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/objects/video.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    @include vp-1199 {
+      background-image: url("../img/objects/video-tablet.jpg");
+    }
+
+    @include vp-767 {
+      background-image: url("../img/objects/video-mobile.jpg");
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-image: url("../img/objects/play.png");
+      transition: 0.3s;
+
+      @include vp-1199 {
+        width: 73px;
+        height: 73px;
+        background-size: contain;
+      }
+    }
+
+    &:hover::after {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+  }
+
+  &__video-player {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

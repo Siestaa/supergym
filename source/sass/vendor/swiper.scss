@@ -41,6 +41,7 @@
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
+  margin: 0;
 }
 .swiper-android .swiper-slide,
 .swiper-wrapper {
@@ -182,7 +183,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 47%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -191,7 +192,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  color: #AFAFAF;
+  line-height: 1;
+  transition: .3s;
+
+  &:hover,
+  &:focus-within {
+    transform: scale(1.2);
+    transition: .3s;
+  }
+
+  &-two {
+    top: 46%;
+
+    @include vp-1199 {
+      top: 55%;
+    }
+  }
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -201,31 +218,90 @@
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  width: 22.62px;
+  height: 22.62px;
+  border-bottom: 1px solid #AFAFAF;
+  border-left: 1px solid #AFAFAF;
   text-transform: none !important;
   letter-spacing: 0;
   text-transform: none;
   font-variant: initial;
-  line-height: 1;
+
+
+  @include vp-767 {
+    width: 13.43px;
+    height: 13.43px;
+  }
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 10px;
+  left: -54px;
   right: auto;
+  z-index: 100;
+
+  @include vp-1199 {
+    left: -17px;
+    top: 48%;
+  }
+
+  @include vp-767 {
+    left: -21px;
+    top: 51%;
+  }
+
+  &-two {
+    left: -54px;
+
+    @include vp-1199 {
+      left: -32px;
+      top: 55%;
+    }
+
+    @include vp-767 {
+      left: -36px;
+      top: 51%;
+    }
+  }
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: 'prev';
+  content: '';
+  transform: rotate(45deg);
+
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 10px;
+  right: -54px;
   left: auto;
+
+  @include vp-1199 {
+    right: -17px;
+    top: 48%;
+  }
+
+  @include vp-767 {
+    right: -21px;
+    top: 51%;
+  }
+
+  &-two {
+    right: -54px;
+
+    @include vp-1199 {
+      right: -32px;
+      top: 55%;
+    }
+
+    @include vp-767 {
+      right: -36px;
+      top: 51%;
+    }
+  }
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: 'next';
+  content: '';
+  transform: rotate(-135deg);
 }
 .swiper-button-lock {
   display: none;

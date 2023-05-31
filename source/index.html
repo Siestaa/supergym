@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <title>SuperGym</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/ptmono.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptmonobold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/robotobold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensed.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" crossorigin="anonymous">
 </head>
@@ -21,408 +20,598 @@
     <div class="header__container container">
       <nav class="header__nav">
         <a href="index.html" class="header__logo">
-          <svg class="header__logo-icon" width="215" height="55" viewBox="0 0 215 55" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo-full"></use>
+          <svg class="header__logo-icon" width="122" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <div class="header__contacts">
-          <a class="header__email" href="mailto:info@sd.ru">
-            <svg class="header__email-icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#email"></use>
-            </svg>
-            <span class="header__email-text">info@sd.ru</span>
-          </a>
-          <a class="header__tel" href="tel:+74950005252">
-            <svg class="header__tel-icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-            <span class="header__tel-text">+7 (495) 000 52 52</span>
-          </a>
+        <a class="header__tel" href="tel:+78005555555">8-800-555-55-55</a>
+        <div class="header__info">
+          <p class="header__city">Омск</p>
+          <div class="header__info-container">
+            <ul class="header__list">
+              <li class="header__item">Тренажёрный зал</li>
+              <li class="header__item">Групповые занятия</li>
+              <li class="header__item">Кардио-зона</li>
+            </ul>
+            <h1 class="header__name">Фитнес центр</h1>
+          </div>
+          <button class="header__button" type="button">Купить абонемент</button>
         </div>
-        <button data-button="popup" class="header__button" type="button">Заказать звонок</button>
+        <picture>
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/objects/intro-tablet.webp 1x, ./img/objects/intro-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/objects/intro.webp 1x, ./img/objects/intro@2x.webp 2x">
+          <source media="(max-width: 1199px)"
+            srcset="./img/objects/intro-tablet.jpg 1x, ./img/objects/intro-tablet@2x.jpg 2x">
+          <img class="header__img" src="./img/objects/intro.jpg" srcset="./img/objects/intro@2x.jpg 2x" width="500"
+            height="556" alt="">
+        </picture>
       </nav>
     </div>
   </header>
   <main class="main">
-    <h1 class="main__title visually-hidden">
-      Smart Device - Поставщик электронных комплектующих.
-    </h1>
-    <section class="main__info info">
-      <div class="info__container container">
-        <div class="info__content">
-          <h2 class="info__title">Печатные платы</h2>
-          <span class="info__text">
-            производство и монтаж, поставка комплектующих, блоков и модулей
-          </span>
-          <a href="#feedback" data-button="info" class="info__button">
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="main__feature feature">
-      <h2 class="feature__title visually-hidden">Наши преимущества</h2>
-      <div class="feature__container container">
-        <ul class="feature__list">
-          <li class="feature__item">
-            <svg class="feature__icon" width="35" height="35" viewBox="0 0 35 35" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#stopwatch"></use>
-            </svg>
-            <h3 class="feature__name">Оперативные сроки</h3>
-            <p class="feature__text">
-              Усовершенствованная логистическая система позволяет нам
-              просчитывать стоимость, производить и&nbsp;доставлять заказы плат и
-              комплектующих в&nbsp;самые короткие сроки
-            </p>
-          </li>
-          <li class="feature__item">
-            <svg class="feature__icon" width="35" height="35" viewBox="0 0 35 35" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#hired"></use>
-            </svg>
-            <h3 class="feature__name">Крупные поставщики</h3>
-            <p class="feature__text">
-              Нашими поставщиками являются такие крупные мировые компании как:
-              OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими
-              компаниями обеспечивает хорошее качество нашей продукции.
-            </p>
-          </li>
-          <li class="feature__item">
-            <svg class="feature__icon" width="35" height="35" viewBox="0 0 35 35" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#detective"></use>
-            </svg>
-            <h3 class="feature__name">Полная конфиденциальность</h3>
-            <p class="feature__text">
-              По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
-            </p>
-          </li>
-          <li class="feature__item">
-            <svg class="feature__icon" width="35" height="35" viewBox="0 0 35 35" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#tag"></use>
-            </svg>
-            <h3 class="feature__name">Персонализация стоимости</h3>
-            <p class="feature__text">
-              Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки,
-              чтобы установить ту&nbsp;цену, которая Вас устраивает.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="main__company company">
-      <div class="company__container container">
-        <div class="company__about-us">
-          <picture>
-            <source type="image/webp" srcset="./img/objects/2022.webp">
-            <img class="company__year" src="./img/objects/2022.png" width="150" height="320" alt="Год основания - 2022."
-              loading="lazy">
-          </picture>
-
-          <div class="company__info">
-            <h2 class="company__title">О компании</h2>
-            <div class="company__text">
-              <p data-text="company" class="company__text-item">
-                Мы&nbsp;поставляем электронные комплектующие, производим печатные платы
-                и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные
-                заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.<br><br> Наши поставщики&nbsp;&mdash; мировые
-                производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
-                REFOND.
-              </p>
-              <p data-text="company" data-hide="mobile" class="company__text-item company__text-item--hide-mobile">
-                Печатные платы и&nbsp;комплектующие Service Devices применяются
-                на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
-                (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
-                крупнейшие Производители светотехники России.
-              </p>
-              <p data-text="company" data-hide="desktop" class="company__text-item company__text-item--hide">Smart
-                Device&nbsp;&mdash; это команда профессионалов. Через
-                нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество
-                по&nbsp;сей день. На&nbsp;данный
-                момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
-                Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой
-                внутри компании.
-                Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов
-              </p>
-            </div>
-            <button data-button="company" data-open="false" class="company__button">Подробнее</button>
+    <div class="main__container container">
+      <section class="main__description description">
+        <div class="description__text-sector">
+          <h2 class="description__title">Тренажерный зал</h2>
+          <p class="description__area-text">Просторный зал площадью 900 кв/м</p>
+          <div class="description__text-wrapper">
+            <p data-part="1" class="description__text">Supergym – самый большой фитнес центр за Уралом и идеальное место
+              для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для
+              всех спортсменов.</p>
+            <p data-part="2" class="description__text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40
+              тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых
+              занятий. </p>
           </div>
         </div>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/objects/description-mobile.webp 1x, ./img/objects/description-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/objects/description-tablet.webp 1x, ./img/objects/description-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/objects/description.webp 1x, ./img/objects/description@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="./img/objects/description-mobile.jpg 1x, ./img/objects/description-mobile@2x.jpg 2x">
+          <source media="(max-width: 1199px)"
+            srcset="./img/objects/description-tablet.jpg 1x, ./img/objects/description-tablet@2x.jpg 2x">
+          <img class="description__img" src="./img/objects/description.jpg" srcset="./img/objects/description@2x.jpg 2x"
+            width="660" height="401" alt="">
+        </picture>
+        <div class="description__video">
+          <button data-type="video-play" type="button" class="description__video-play">
+          </button>
+          <iframe data-type="video-player" width="364" height="228" class="description__video-player"
+            src="https://www.youtube.com/embed/9TZXsZItgdw" title="Бесплатные интерактивные онлайн-курсы"
+            allowfullscreen allow="autoplay"></iframe>
+        </div>
+      </section>
+    </div>
+    <div class="main__wrapper wrapper--grey">
+      <div class="main__container container">
+        <section class="main__offer offer">
+          <picture class="offer__sub-img">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/objects/pancake-tablet.webp 1x, ./img/objects/pancake-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/objects/pancake.webp 1x, ./img/objects/pancake@2x.webp 2x">
+            <source media="(max-width: 1199px)"
+              srcset="./img/objects/pancake-tablet.png 1x, ./img/objects/pancake-tablet@2x.png 2x">
+            <img src="./img/objects/pancake.png" srcset="./img/objects/pancake2x.png 2x" width="287" height="494"
+              alt="">
+          </picture>
+          <h2 class="offer__title">Абонементы</h2>
+          <div class="offer__tabs tabs" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="tabs__controls" data-tabs="controls">
+              <button class="tabs__control btn is-active" type="button" data-tabs="control" data-index="0">1
+                Месяц</button>
+              <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">6 Месяцев</button>
+              <button class="tabs__control btn" type="button" data-tabs="control" data-index="2">12 Месяцев</button>
+            </div>
+            <div class="tabs__content" data-tabs="content" style="height: 374px;">
+              <div class="tabs__element is-active" data-tabs="element">
+                <ul class="tabs__element-list">
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">С тренером</h3>
+                    <p class="tabs__element-time">12 занятий</p>
+                    <p class="tabs__element-cost">5000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">5000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">Дневной</h3>
+                    <p class="tabs__element-time">с 8:00 до 17:00 </p>
+                    <p class="tabs__element-cost">1700
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">1700</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">Полный день</h3>
+                    <p class="tabs__element-time">с 8:00 до 22:00 </p>
+                    <p class="tabs__element-cost">2700
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">2700</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <ul class="tabs__element-list">
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">С тренером</h3>
+                    <p class="tabs__element-time">12 занятий</p>
+                    <p class="tabs__element-cost">25000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">25000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">Дневной</h3>
+                    <p class="tabs__element-time">с 8:00 до 17:00 </p>
+                    <p class="tabs__element-cost">8000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">8000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">Полный день</h3>
+                    <p class="tabs__element-time">с 8:00 до 22:00 </p>
+                    <p class="tabs__element-cost">14000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">14000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <ul class="tabs__element-list">
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">С тренером</h3>
+                    <p class="tabs__element-time">12 занятий</p>
+                    <p class="tabs__element-cost">40000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">40000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">Дневной</h3>
+                    <p class="tabs__element-time">с 8:00 до 17:00 </p>
+                    <p class="tabs__element-cost">15000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">15000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                  <li class="tabs__element-item" tabindex="1">
+                    <h3 class="tabs__element-title">Полный день</h3>
+                    <p class="tabs__element-time">с 8:00 до 22:00 </p>
+                    <p class="tabs__element-cost">26000
+                      <span class="tabs__element-rub">₽</span>
+                      <span class="tabs__element-shadow">26000</span>
+                    </p>
+                    <a href="" class="tabs__element-buy">купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="main__goods goods">
-      <div class="goods__container container">
-        <div class="goods__wrapper">
-          <h2 class="goods__title  goods__title--desktop">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
-          <h2 class="goods__title  goods__title--mobile">Товары и&nbsp;услуги Smart Device</h2>
-          <ul class="goods__list">
-            <li class="goods__item">
-              <a href="#" class="goods__link">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/backs/back-1-mobile.webp 1x, ./img/backs/back-1-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="./img/backs/back-1-tablet.webp 1x, ./img/backs/back-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/backs/back-1.webp 1x, ./img/backs/back-1@2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="./img/backs/back-1-mobile.jpg 1x, ./img/backs/back-1k-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="./img/backs/back-1-tablet.jpg 1x, ./img/backs/back-1-tablet@2x.jpg 2x">
-                  <img class="goods__back" src="./img/backs/back-1.jpg" srcset="./img/backs/back-1@2x.jpg 2x"
-                    width="1920" height="880" alt="" loading="lazy">
-                </picture>
-                <span class="goods__text">Производство <br>печатных плат</span>
-                <svg class="goods__button-icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#goods-arrow"></use>
-                </svg>
-              </a>
+    </div>
+    <div class="main__container container">
+      <section class="main__ads ads">
+        <div class="ads__info">
+          <h2 class="ads__title">SUPER GAMES</h2>
+          <div class="ads__data">
+            <span class="ads__data-text">Дата</span>
+            <p class="ads__data-number">
+              <span class="ads__data-number-main">7</span>
+              <span class="ads__data-number-secondary">Марта 2019</span>
+            </p>
+          </div>
+          <div class="ads__time">
+            <span class="ads__time-text">Время</span>
+            <span class="ads__time-number">12:00</span>
+          </div>
+          <p class="ads__text">Ежегодные соревнования по CrossFit</p>
+          <a href="" class="ads__link">заполнить заявку</a>
+        </div>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/objects/promo-mobile.webp 1x, ./img/objects/promo-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/objects/promo-tablet.webp 1x, ./img/objects/promo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/objects/promo.webp 1x, ./img/objects/promo@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="./img/objects/promo-mobile.jpg 1x, ./img/objects/promo-mobile@2x.jpg 2x">
+          <source media="(max-width: 1199px)"
+            srcset="./img/objects/promo-tablet.jpg 1x, ./img/objects/promo-tablet@2x.jpg 2x">
+          <img class="ads__img" src="./img/objects/promo.jpg" srcset="./img/objects/promo@2x.jpg 2x" width="660"
+            height="401" alt="">
+        </picture>
+      </section>
+    </div>
+    <div class="main__container container">
+      <section class="main__coaches coaches">
+        <h2 class="coaches__title">Тренеры</h2>
+        <!-- Slider main container -->
+        <div class="coaches__swiper swiper swiper-one">
+          <!-- Additional required wrapper -->
+          <ul class="coaches__swiper-list swiper-wrapper">
+            <!-- Slides -->
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Анна Павлова</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach1.webp 1x, ./img/coaches/coach1@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach1.jpg" srcset="./img/coaches/coach1@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Анна Павлова</h3>
+                <span class="coaches__type">PowerLifting</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level 8 Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата Индонезии по PowerLifting</li>
+                  <li class="coaches__ability">Опыт - 5 лет</li>
+                </ul>
+              </div>
             </li>
-            <li class="goods__item">
-              <a href="#" class="goods__link">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/backs/back-2-mobile.webp 1x, ./img/backs/back-2-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="./img/backs/back-2-tablet.webp 1x, ./img/backs/back-2-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/backs/back-2.webp 1x, ./img/backs/back-2@2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="./img/backs/back-2-mobile.jpg 1x, ./img/backs/back-2-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="./img/backs/back-2-tablet.jpg 1x, ./img/backs/back-2-tablet@2x.jpg 2x">
-                  <img class="goods__back" src="./img/backs/back-2.jpg" srcset="./img/backs/back-2@2x.jpg 2x"
-                    width="1920" height="880" alt="" loading="lazy">
-                </picture>
-                <span class="goods__text">Монтаж печатных <br>плат</span>
-                <svg class="goods__button-icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#goods-arrow"></use>
-                </svg>
-              </a>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Алексей Лавров</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach2.webp 1x, ./img/coaches/coach2@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach2.jpg" srcset="./img/coaches/coach2@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Алексей Лавров</h3>
+                <span class="coaches__type">Boxing</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level 999 Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата Тайланда по Тайскому боксу</li>
+                  <li class="coaches__ability">Опыт - 9 лет</li>
+                </ul>
+              </div>
             </li>
-            <li class="goods__item">
-              <a href="#" class="goods__link">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/backs/back-3-mobile.webp 1x, ./img/backs/back-3-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="./img/backs/back-3-tablet.webp 1x, ./img/backs/back-3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/backs/back-3.webp 1x, ./img/backs/back-3@2x.webp 2x">
-                  <source media="(max-width: 767px)"
-                    srcset="./img/backs/back-3-mobile.jpg 1x, ./img/backs/back-3-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)"
-                    srcset="./img/backs/back-3-tablet.jpg 1x, ./img/backs/back-3-tablet@2x.jpg 2x">
-                  <img class="goods__back" src="./img/backs/back-3.jpg" srcset="./img/backs/back-3@2x.jpg 2x"
-                    width="1920" height="880" alt="" loading="lazy">
-                </picture>
-                <span class="goods__text">Комплектующие <br>для светотехники</span>
-                <svg class="goods__button-icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#goods-arrow"></use>
-                </svg>
-              </a>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Александр Пашков</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach3.webp 1x, ./img/coaches/coach3@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach3.jpg" srcset="./img/coaches/coach3@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Александр Пашков</h3>
+                <span class="coaches__type">CrossFit</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level 3 Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата России по CrossFit</li>
+                  <li class="coaches__ability">Опыт - 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Мария Кетова</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach4.webp 1x, ./img/coaches/coach4@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach4.jpg" srcset="./img/coaches/coach4@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Мария Кетова</h3>
+                <span class="coaches__type">Cycling</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level 7 Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата Бразилии по велоспорту </li>
+                  <li class="coaches__ability">Опыт - 9 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Рыжик</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach5.webp 1x, ./img/coaches/coach5@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach5.jpg" srcset="./img/coaches/coach5@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Рыжик</h3>
+                <span class="coaches__type">Котивная гимнастика</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level кусь Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата двора по прозанию в банку </li>
+                  <li class="coaches__ability">Опыт - 3 года</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Барсик</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach6.webp 1x, ./img/coaches/coach6@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach6.jpg" srcset="./img/coaches/coach6@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Барсик</h3>
+                <span class="coaches__type">Volleyball</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level тыгдык Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата квартиры по ловлению бумажки </li>
+                  <li class="coaches__ability">Опыт - 1 год</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name">Моня Лизя</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach7.webp 1x, ./img/coaches/coach7@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach7.jpg" srcset="./img/coaches/coach7@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Моня Лизя</h3>
+                <span class="coaches__type">Tennis</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level лизь Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата подвала по ору в 6 утра</li>
+                  <li class="coaches__ability">Опыт - 8 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__swiper-item swiper-slide">
+              <h3 class="coaches__name coaches__name--dark">Борис</h3>
+              <picture>
+                <source type="image/webp" srcset="./img/coaches/coach8.webp 1x, ./img/coaches/coach8@2x.webp 2x">
+                <img class="coaches__img" src="./img/coaches/coach8.jpg" srcset="./img/coaches/coach8@2x.jpg 2x"
+                  width="260" height="294" alt="">
+              </picture>
+              <div class="coaches__info">
+                <h3 class="coaches__name coaches__name--inner">Борис</h3>
+                <span class="coaches__type">CattingLifting</span>
+                <ul class="coaches__ability-list">
+                  <li class="coaches__ability">Certified Level CAT Trainer</li>
+                  <li class="coaches__ability">Победитель чемпионата вселенной по разрыванию игрушек</li>
+                  <li class="coaches__ability">Опыт - 12 лет</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
+        <div class="swiper-button-prev swiper-button-prev-one"></div>
+        <div class="swiper-button-next swiper-button-next-one"></div>
+      </section>
+    </div>
+    <div class="main__wrapper wrapper--grey">
+      <div class="main__container container">
+        <section class="main__features features">
+          <h2 class="features__title">Наши преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item features__item--area">
+              <div class="features__item-container">
+                <p class="features__item-number">900</p>
+                <p class="features__item-number-info">кв/м</p>
+              </div>
+              <div class="features__item-container">
+                <p class="features__item-type">Площадь </p>
+                <p class="features__item-text">Занимайтесь без очередей и толпучки</p>
+              </div>
+            </li>
+            <li class="features__item features__item--comfort">
+              <div class="features__item-container">
+                <p class="features__item-number">350</p>
+                <p class="features__item-number-info">мест</p>
+              </div>
+              <div class="features__item-container">
+                <p class="features__item-type">Комфорт</p>
+                <p class="features__item-text">Просторные раздевалки,
+                  душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li class="features__item features__item--trainers">
+              <p class="features__item-number">100</p>
+              <p class="features__item-type">Тренажеров</p>
+              <p class="features__item-text">Современные тренажеры на все группы мышц</p>
+            </li>
+            <li class="features__item features__item--cars">
+              <div class="features__item-container">
+                <p class="features__item-number">70 </p>
+                <p class="features__item-number-info">машин</p>
+              </div>
+              <div class="features__item-container">
+                <p class="features__item-type">Собственная парковка</p>
+                <p class="features__item-text">Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </li>
+            <li class="features__item features__item--exp">
+              <div class="features__item-container">
+                <p class="features__item-number">5+</p>
+                <p class="features__item-number-info">лет</p>
+              </div>
+              <div class="features__item-container">
+                <p class="features__item-type">Тренерский опыт</p>
+                <p class="features__item-text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
-    </section>
-    <section id="feedback" class="main__feedback feedback">
-      <div class="feedback__back"></div>
-      <div class="feedback__container container">
-        <div class="feedback__form-wrapper" data-form-validate data-callback="base" data-parent-validate="base"
-          data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
-          <img src="./img/objects/paper-plane.png" alt="" class="feedback__image" width="510" height="285"
-            loading="lazy">
-          <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form" autocomplete="off">
-            <h2 class="feedback__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
-            <p class="feedback__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
-            <div class="feedback__custom-input custom-input feedback__custom-input--input" data-validate-type="text"
-              data-limitation="name" data-message-base="Поле обязательно к заполнению"
-              data-message-extra="Проверьте корректность заполнения поля" data-required="">
-              <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени.">
-            </div>
-            <div class="feedback__custom-input custom-input feedback__custom-input--input" data-validate-type="phone"
-              data-on-input-validate="" data-message-base="Поле обязательно к заполнению"
-              data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-              data-required data-phone-length="18">
-              <input data-input="tel" name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
-            </div>
-            <div class="feedback__custom-input custom-input feedback__custom-input--textarea" data-validate-type="text">
-              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
-                aria-label="Поле для ввода вопроса."></textarea>
-            </div>
-            <div class="feedback__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
-              data-message-base="Поле обязательно к заполнению">
-              <label data-label="checkbox" class="feedback__agreed-text feedback__checkbox">
-                <input data-input="checkbox" name="agreed" value="agreed" type="checkbox">
-                <svg data-icon="checkbox" data-checked="true" data-hide="true" class="feedback__checkbox-icon"
-                  width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#checked"></use>
-                </svg>
-                <svg data-icon="checkbox" data-checked="false" data-hide="false" class="feedback__checkbox-icon"
-                  width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#not-checked"></use>
-                </svg>
-                Я&nbsp;согласен на&nbsp;обработку персональных данных
-              </label>
-            </div>
-            <button type="submit" class="feedback__button">Задать вопрос</button>
-          </form>
+    </div>
+    <div class="main__container container">
+      <section class="main__promo promo">
+        <h2 class="promo__title">Акции</h2>
+        <div class="promo__year">
+          <div class="promo__year-container">
+            <p class="promo__year-text">Год</p>
+            <p class="promo__cost">4999</p>
+            <p class="promo__text">Безлимитный абонемент в тренажерный зал</p>
+            <a href="" class="promo__link">подробнее</a>
+          </div>
+          <div class="promo__img-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/objects/sub-mobile.webp 1x, ./img/objects/sub-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/objects/sub-tablet.webp 1x, ./img/objects/sub-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/objects/sub.webp 1x, ./img/objects/sub@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="./img/objects/sub-mobile.jpg 1x, ./img/objects/sub-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/objects/sub-tablet.jpg 1x, ./img/objects/sub-tablet@2x.jpg 2x">
+              <img class="promo__img" src="./img/objects/sub.jpg" srcset="./img/objects/sub@2x.jpg 2x" width="280"
+                height="462" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="promo__block promo__block--one">
+          <h3 class="promo__name">Месяц бесплатно</h3>
+          <p class="promo__description">Приведи друга, получи абонемент в подарок</p>
+          <a href="" class="promo__link promo__link--block">подробнее</a>
+        </div>
+        <div class="promo__block promo__block--two">
+          <h3 class="promo__name">Скидка 20%</h3>
+          <p class="promo__description">Корпоративный фитнес с командой</p>
+          <a href="" class="promo__link promo__link--block">подробнее</a>
+        </div>
+      </section>
+    </div>
+    <div class="main__container container">
+      <section class="main__feedback feedback">
+        <h2 class="feedback__title">Отзывы</h2>
+        <div class="feedback__swiper swiper swiper-two">
+          <!-- Additional required wrapper -->
+          <ul class="feedback__swiper-list swiper-wrapper">
+            <!-- Slides -->
+            <li class="feedback__swiper-item swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/feedback/photo1.webp 1x, ./img/feedback/photo1@2x.webp 2x">
+                <img class="feedback__avatar" src="./img/feedback/photo1.png" srcset="./img/feedback/photo1@2x.png 2x"
+                  width="80" height="80" alt="">
+              </picture>
+              <p class="feedback__name">Анна Орлова</p>
+              <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="feedback__swiper-item swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/feedback/photo1.webp 1x, ./img/feedback/photo1@2x.webp 2x">
+                <img class="feedback__avatar" src="./img/feedback/photo1.png" srcset="./img/feedback/photo1@2x.png 2x"
+                  width="80" height="80" alt="">
+              </picture>
+              <p class="feedback__name">Анна Орлова</p>
+              <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="feedback__swiper-item swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="./img/feedback/photo1.webp 1x, ./img/feedback/photo1@2x.webp 2x">
+                <img class="feedback__avatar" src="./img/feedback/photo1.png" srcset="./img/feedback/photo1@2x.png 2x"
+                  width="80" height="80" alt="">
+              </picture>
+              <p class="feedback__name">Анна Орлова</p>
+              <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-two"></div>
+        <div class="swiper-button-next swiper-button-next-two"></div>
+      </section>
+    </div>
+    <section class="main__contacts contacts">
+      <div class="contacts__form-wrapper">
+        <div class="contacts__form">
+          <h2 class="contacts__title contacts__title--form">Бесплатное занятие </h2>
+          <div class="contacts__form-container" data-form-validate data-callback="base" data-parent-validate="base"
+                data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
+                <form action="https://echo.htmlacademy.ru/" method="post" class="contacts__form-field" autocomplete="off">
+                  <div class="contacts__custom-input custom-input contacts__custom-input--input" data-validate-type="text"
+                    data-limitation="name" data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required="">
+                    <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени.">
+                  </div>
+                  <div class="contacts__custom-input custom-input contacts__custom-input--input" data-validate-type="phone"
+                    data-on-input-validate="" data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно" data-required data-phone-length="18">
+                    <input data-input="tel" name="tel" type="tel" placeholder="Телефон"
+                      aria-label="Поле для ввода телефона.">
+                  </div>
+                  <button type="submit" class="contacts__button">Оставить заявку</button>
+                </form>
+              </div>
+        </div>
+      </div>
+      <div class="contacts__info-wrapper">
+        <div class="contacts__info">
+          <h2 class="contacts__title contacts__title--info">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Адрес:</h3>
+              <address class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</address>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Телефон:</h3>
+              <a href="tel:88005555555" class="contacts__item-text">8-800-555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">График работы:</h3>
+              <p class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Email:</h3>
+              <a href="mailto:omsk@supergym.ru" class="contacts__item-text">omsk@supergym.ru</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
-  <section data-id="popup" class="main__popup popup popup--hide">
-    <div class="popup__container" data-form-validate>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="popup__form" autocomplete="off">
-        <h2 class="popup__title">Закажите звонок</h2>
-        <p class="popup__text">
-          Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время
-        </p>
-        <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
-          data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
-          data-required="">
-          <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени." autofocus>
-        </div>
-        <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
-          data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
-          data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-          <input name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
-        </div>
-        <div class="popup__custom-input custom-input" data-validate-type="text">
-          <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
-            aria-label="Поле для ввода вопроса."></textarea>
-        </div>
-        <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
-          data-message-base="Поле обязательно к заполнению">
-          <label data-label="checkbox" class="popup__agreed-text popup__checkbox">
-            <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox">
-            <svg data-icon="checkbox" data-checked="true" data-hide="true" class="popup__checkbox-icon" width="15"
-              height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#checked"></use>
-            </svg>
-            <svg data-icon="checkbox" data-checked="false" data-hide="false" class="popup__checkbox-icon" width="15"
-              height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#not-checked"></use>
-            </svg>
-            Я&nbsp;согласен на&nbsp;обработку персональных данных
-          </label>
-        </div>
-        <button type="submit" class="popup__button">Отправить</button>
-      </form>
-      <button data-button="popup" type="button" class="popup__close">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589653 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z"
-            fill="white" />
-        </svg>
-      </button>
-    </div>
-  </section>
   <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__wrapper">
-        <div class="footer__link-wrapper">
-          <a href="index.html" class="footer__logo">
-            <svg class="footer__logo-icon" width="215" height="55" viewBox="0 0 215 55" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#logo-full"></use>
-            </svg>
-          </a>
-          <ul class="footer__social">
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#ok"></use>
+    <div class="footer__wrapper wrapper--dark">
+      <div class="footer__container container">
+        <div class="footer__field">
+          <ul class="footer__sections">
+            <li class="footer__section footer__section--logo"><a href="" class="footer__logo">
+                <svg class="footer__logo-icon" width="88" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </a></li>
+            <li class="footer__section"><a href="" class="footer__section-link">Услуги</a></li>
+            <li class="footer__section"><a href="" class="footer__section-link">Абонементы</a></li>
+            <li class="footer__section"><a href="" class="footer__section-link">Акции</a></li>
+            <li class="footer__section"><a href="" class="footer__section-link">Тренеры</a></li>
+            <li class="footer__section"><a href="" class="footer__section-link">Расписание</a></li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__social-item"><a href="" class="footer__social-link">
+                <svg class="footer__social-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#pinterest"></use>
+              </a></li>
+            <li class="footer__social-item"><a href="" class="footer__social-link">
+                <svg class="footer__social-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div data-section="accardeon" data-open="false" class="footer__section-wrapper">
-          <div class="footer__accardeon">
-            <h2 class="footer__title">Разделы сайта</h2>
-            <button type="button" aria-label="Открыть список сраниц нашего сайта." class="footer__accardeon-button">
-              <svg data-button="accardeon" class="footer__accardeon-icon" width="15" height="15" viewBox="0 0 15 15"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use data-icon="button" xlink:href="img/sprite.svg#plus"></use>
-              </svg>
-            </button>
-          </div>
-          <ul class="footer__section-list">
-            <li class="footer__section-item">
-              <a href="#" class="footer__section-link">О&nbsp;Компании</a>
-            </li>
-            <li class="footer__section-item">
-              <a href="#" class="footer__section-link">Продукты</a>
-            </li>
-            <li class="footer__section-item">
-              <a href="#" class="footer__section-link">Производство печатных плат</a>
-            </li>
-            <li class="footer__section-item" data-break>
-              <a href="#" class="footer__section-link">Монтаж печатных плат</a>
-            </li>
-            <li class="footer__section-item">
-              <a href="#" class="footer__section-link">Комплектующие</a>
-            </li>
-            <li class="footer__section-item">
-              <a href="#" class="footer__section-link">Доставка</a>
-            </li>
-            <li class="footer__section-item">
-              <a href="#" class="footer__section-link">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div data-section="accardeon" data-open="false" class="footer__address-wrapper">
-          <div class="footer__accardeon">
-            <h2 class="footer__title">Наш офис</h2>
-            <button type="button" aria-label="Открыть список c нашим адресом и телефонами."
-              class="footer__accardeon-button">
-              <svg data-button="accardeon" class="footer__accardeon-icon" width="15" height="15" viewBox="0 0 15 15"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use data-icon="button" xlink:href="img/sprite.svg#plus"></use>
-              </svg>
-            </button>
-          </div>
-          <ul class="footer__address-list">
-            <li class="footer__address-item">
-              <address class="footer__address-text">
-                г. Мытищи, Олимпийский проспект, д.10
-              </address>
-            </li>
-            <li class="footer__address-item">
-              <a href="tel:+74955894050" class="footer__address-tel">+7 (495) 589-40-50</a>
-            </li>
-            <li class="footer__address-item">
-              <a href="tel:+74955894050" class="footer__address-tel">+7 (925) 389-58-29</a>
-            </li>
-            <li class="footer__address-item">
-              <a href="tel:+74955894050" class="footer__address-tel">+7 (925) 364-78-13</a>
-            </li>
+              </a></li>
+            <li class="footer__social-item"><a href="" class="footer__social-link">
+                <svg class="footer__social-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
   <script src="js/main.min.js" defer></script>
+  <script src="js/vendor.min.js" defer></script>
 </body>
 
 </html>

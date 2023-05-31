@@ -1,0 +1,291 @@
+.contacts {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-template-columns: 100%;
+  }
+
+  &__form-wrapper {
+    width: 100%;
+    background: #102654;
+    color: #ffffff;
+    padding: 66px 170px 47px 15.06%;
+
+    @include vp-1199 {
+      padding: 63px 0 68px;
+    }
+
+    @include vp-767 {
+      padding: 63px 15px 68px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 649px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    @include vp-1199 {
+      width: 65.5%;
+      max-width: none;
+      margin: 0 auto;
+      padding-right: 30px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-family: $ff-main-object;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+
+    @include vp-767 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &--form {
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0 0 24px;
+
+      @include vp-1199 {
+        font-weight: 700;
+        margin-bottom: 29px;
+      }
+    }
+
+    &--info {
+      font-weight: 600;
+      margin: 0 0 21px;
+
+      @include vp-1199 {
+        margin-bottom: 32px;
+      }
+
+      @include vp-767 {
+        margin-bottom: 34px;
+      }
+    }
+  }
+
+  &__form-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px 30px;
+
+    @include vp-1199 {
+      gap: 23px 60px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__custom-input {
+    padding: 0;
+    position: relative;
+
+    & input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #74819c;
+      width: 100%;
+
+
+      @include vp-767 {
+        padding-bottom: 5px;
+      }
+
+      &::placeholder {
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        font-family: $ff-main-text;
+      }
+    }
+
+    & .input-message {
+      font-family: $ff-main-text;
+      position: absolute;
+      bottom: -20px;
+      width: fit-content;
+      left: 0;
+      font-size: 10px;
+    }
+  }
+
+  &__button {
+    grid-column: 1/3;
+    padding: 16px 0;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $ff-main-text;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-within {
+      outline: none;
+      border: 3px solid;
+      border-image: linear-gradient(135deg, #d10a42, #00359f) 10;
+    }
+
+    @include vp-767 {
+      grid-column: 1/2;
+      margin-top: 11px;
+    }
+  }
+
+  &__info-wrapper {
+    width: 100%;
+    background: #ffffff;
+    color: #102654;
+    padding: 56px 15.22% 47px 120px;
+    border-top: 1px solid #74819c;
+
+    @include vp-1199 {
+      padding: 62px 0 65px;
+    }
+
+    @include vp-767 {
+      padding: 63px 15px 65px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 649px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+
+    @include vp-1199 {
+      width: 65.5%;
+      max-width: none;
+      margin: 0 auto;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px 120px;
+    position: relative;
+
+    @include vp-1199 {
+      gap: 20px 50px;
+      margin: 0;
+      grid-template-columns: auto auto;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      gap: 21px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90%;
+      position: absolute;
+      background-color: #74819c;
+      left: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+
+      @include vp-1199 {
+        left: 53%;
+      }
+
+      @include vp-767 {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #102654;
+
+    @include vp-1199 {
+      gap: 10px;
+    }
+
+    @include vp-767 {
+      &:nth-child(3) {
+        grid-row: 2/3;
+      }
+    }
+
+    & a {
+      width: fit-content;
+      color: #102654;
+      box-sizing: border-box;
+
+      &:hover,
+      &:focus-within {
+        outline: none;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    color: #102654;
+
+    @include vp-1199 {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: normal;
+    margin: 0;
+    color: #102654;
+
+    @include vp-1199 {
+      font-size: 18px;
+    }
+  }
+}

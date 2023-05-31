@@ -1,0 +1,167 @@
+.coaches {
+  max-width: 89%;
+  margin: 0 auto;
+  padding: 0 0 140px;
+  position: relative;
+
+  @include vp-1199 {
+    padding: 0 37px 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 16px 70px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    font-family: $ff-main-object;
+    margin: 0 0 48px;
+    opacity: 1;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__swiper-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__swiper-item {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    padding-top: 25%;
+    min-height: 294px;
+
+    &:hover,
+    &:focus-within {
+      outline: none;
+
+      & .coaches__info {
+        display: flex;
+        transition: 0.3s;
+      }
+
+      & .coaches__name {
+        opacity: 0;
+
+        &--inner {
+          opacity: 1;
+        }
+      }
+    }
+
+    @include vp-1199 {
+      padding-top: 52%;
+    }
+
+    @include vp-767 {
+      min-height: 274px;
+      padding-top: 121%;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    color: #ffffff;
+    position: absolute;
+    bottom: 25px;
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+
+    &--inner {
+      position: static;
+
+      @include vp-1199 {
+        text-align: start;
+      }
+    }
+
+    &--dark {
+      color: #102654;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    height: 100%;
+  }
+
+  &__info {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 51px 45px 10px 54px;
+    background-color: rgba(16, 38, 84, 0.89);
+    height: 100%;
+    display: none;
+    transition: 0.3s;
+    color: #ffffff;
+    width: 100%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @include vp-1199 {
+      padding: 53px 54px 10px;
+    }
+
+    @include vp-767 {
+      padding: 45px 10px 10px 39px;
+    }
+  }
+
+  &__type {
+    font-size: 16px;
+    line-height: 150%;
+    color: #b6bdcc;
+    margin: 0 0 32px;
+  }
+
+  &__ability-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    list-style-type: disc;
+    padding-left: 16px;
+
+    @include vp-767 {
+      padding-left: 11px;
+      gap: 11px;
+    }
+  }
+
+  &__ability {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

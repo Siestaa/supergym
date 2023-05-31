@@ -7,6 +7,15 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
+  &--grey {
+    background: #f8f9fc;
+    position: relative;
+  }
+
+  &--dark {
+    background: #030a1a;
+  }
+
   .header,
   .footer {
     flex-shrink: 0;
