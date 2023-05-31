@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Roboto Condensed"), url("../fonts/robotocondensed.woff2") format("woff2"), url("../fonts/robotocondensed.woff") format("woff");
+  src: url("../fonts/robotocondensed.woff2") format("woff2"), url("../fonts/robotocondensed.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Roboto Condensed"), url("../fonts/robotocondensedbold.woff2") format("woff2"), url("../fonts/robotocondensedbold.woff") format("woff");
+  src: url("../fonts/robotocondensedbold.woff2") format("woff2"), url("../fonts/robotocondensedbold.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Alumni Sans"), url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../fonts/AlumniSans-SemiBold.woff") format("woff");
+  src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../fonts/AlumniSans-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Alumni Sans"), url("../fonts/AlumniSans-Bold.woff2") format("woff2"), url("../fonts/AlumniSans-Bold.woff") format("woff");
+  src: url("../fonts/AlumniSans-Bold.woff2") format("woff2"), url("../fonts/AlumniSans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: local("Alumni Sans"), url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"), url("../fonts/AlumniSans-ExtraBold.woff") format("woff");
+  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2"), url("../fonts/AlumniSans-ExtraBold.woff") format("woff");
 }
 
 *,
@@ -1249,7 +1249,6 @@ button.swiper-pagination-bullet {
 
 .header__logo:hover,
 .header__logo:focus-within {
-  outline: none;
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
@@ -1279,7 +1278,6 @@ button.swiper-pagination-bullet {
 
 .header__tel:hover,
 .header__tel:focus-within {
-  outline: none;
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
@@ -1371,7 +1369,6 @@ button.swiper-pagination-bullet {
 
 .header__button:hover,
 .header__button:focus-within {
-  outline: none;
   border: 4px solid;
   -o-border-image: -o-linear-gradient(315deg, #d10a42, #00359f) 10;
   border-image: linear-gradient(135deg, #d10a42, #00359f) 10;
@@ -1514,6 +1511,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
 }
 
 [data-tabs=parent] {
@@ -1611,7 +1609,6 @@ button.swiper-pagination-bullet {
 .tabs__control:focus-within {
   border-bottom: 2px solid #6e0c28;
   padding-bottom: 9px;
-  outline: none;
 }
 
 .tabs__control.is-active {
@@ -1743,7 +1740,6 @@ button.swiper-pagination-bullet {
 
 .tabs__element-buy:hover,
 .tabs__element-buy:focus-within {
-  outline: none;
   border: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -1965,11 +1961,6 @@ button.swiper-pagination-bullet {
   height: fit-content;
   padding-top: 25%;
   min-height: 294px;
-}
-
-.coaches__swiper-item:hover,
-.coaches__swiper-item:focus-within {
-  outline: none;
 }
 
 .coaches__swiper-item:hover .coaches__info,
@@ -2517,6 +2508,7 @@ button.swiper-pagination-bullet {
   border: none;
   border-bottom: 1px solid #74819c;
   width: 100%;
+  color: #ffffff;
 }
 
 .contacts__custom-input input::-webkit-input-placeholder {
@@ -2584,7 +2576,6 @@ button.swiper-pagination-bullet {
 
 .contacts__button:hover,
 .contacts__button:focus-within {
-  outline: none;
   border: 3px solid;
   -o-border-image: -o-linear-gradient(315deg, #d10a42, #00359f) 10;
   border-image: linear-gradient(135deg, #d10a42, #00359f) 10;
@@ -2660,7 +2651,6 @@ button.swiper-pagination-bullet {
 
 .contacts__item a:hover,
 .contacts__item a:focus-within {
-  outline: none;
   text-decoration: underline;
 }
 
@@ -2715,7 +2705,6 @@ button.swiper-pagination-bullet {
 
 .footer__logo-icon:hover,
 .footer__logo-icon:focus-within {
-  outline: none;
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
@@ -2754,7 +2743,6 @@ button.swiper-pagination-bullet {
 
 .footer__section-link:hover,
 .footer__section-link:focus-within {
-  outline: none;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -2776,7 +2764,6 @@ button.swiper-pagination-bullet {
 
 .footer__social-icon:hover,
 .footer__social-icon:focus-within {
-  outline: none;
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
@@ -3098,6 +3085,13 @@ button.swiper-pagination-bullet {
     padding: 12px 0;
     border: 2px solid #ffffff;
     letter-spacing: 0.05em;
+  }
+
+  .ads__link:hover,
+  .ads__link:focus-within {
+    border: 2px solid;
+    -o-border-image: -o-linear-gradient(315deg, #d10a42, #00359f) 10;
+    border-image: linear-gradient(135deg, #d10a42, #00359f) 10;
   }
 
   .coaches {
@@ -3601,6 +3595,10 @@ button.swiper-pagination-bullet {
     padding-top: 121%;
   }
 
+  .coaches__name--inner {
+    text-align: center;
+  }
+
   .coaches__info {
     padding: 45px 10px 10px 39px;
   }
@@ -3887,7 +3885,7 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
-  .contacts__item:nth-child(3) {
+  .contacts__item[data-order="3"] {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;

@@ -108,6 +108,7 @@
       border: none;
       border-bottom: 1px solid #74819c;
       width: 100%;
+      color: #ffffff;
 
 
       @include vp-767 {
@@ -148,7 +149,6 @@
 
     &:hover,
     &:focus-within {
-      outline: none;
       border: 3px solid;
       border-image: linear-gradient(135deg, #d10a42, #00359f) 10;
     }
@@ -246,7 +246,7 @@
     }
 
     @include vp-767 {
-      &:nth-child(3) {
+      &[data-order="3"] {
         grid-row: 2/3;
       }
     }
@@ -258,7 +258,6 @@
 
       &:hover,
       &:focus-within {
-        outline: none;
         text-decoration: underline;
       }
     }

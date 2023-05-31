@@ -3,10 +3,12 @@ const videoPlay = document.querySelector('[data-type="video-play"]');
 
 const play = () => {
   videoPlayer.src += '?autoplay=1';
-
+  videoPlayer.style.display = 'block';
   videoPlay.style.display = 'none';
 };
 
 export const onPlay = () => {
-  videoPlay.addEventListener('click', play);
+  if (videoPlay) {
+    videoPlay.addEventListener('click', play);
+  }
 };

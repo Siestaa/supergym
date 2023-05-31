@@ -93,6 +93,7 @@ export class Form {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       this._onFormSubmit(event, callback);
+      form.querySelector('button').blur();
     });
 
     form.addEventListener('input', (event) => {

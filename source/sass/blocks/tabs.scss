@@ -56,7 +56,6 @@
   &:focus-within {
     border-bottom: 2px solid #6e0c28;
     padding-bottom: 9px;
-    outline: none;
   }
 
   &.is-active {
@@ -206,7 +205,6 @@
 
   &:hover,
   &:focus-within {
-    outline: none;
     border: none;
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     padding: 25px 0;
