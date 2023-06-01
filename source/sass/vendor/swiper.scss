@@ -195,6 +195,9 @@
   color: #AFAFAF;
   line-height: 1;
   transition: .3s;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 
   &:hover,
   &:focus-within {

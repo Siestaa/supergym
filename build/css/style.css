@@ -223,10 +223,12 @@ button,
 .wrapper--grey {
   background: #f8f9fc;
   position: relative;
+  min-height: 0;
 }
 
 .wrapper--dark {
   background: #030a1a;
+  min-height: 0;
 }
 
 .wrapper .header,
@@ -595,6 +597,9 @@ button,
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 .swiper-button-prev:hover,

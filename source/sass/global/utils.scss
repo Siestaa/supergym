@@ -10,10 +10,12 @@
   &--grey {
     background: #f8f9fc;
     position: relative;
+    min-height: 0;
   }
 
   &--dark {
     background: #030a1a;
+    min-height: 0;
   }
 
   .header,
