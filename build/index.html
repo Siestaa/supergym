@@ -19,12 +19,14 @@
   <header class="header">
     <div class="header__container container">
       <nav class="header__nav">
-        <a href="index.html" class="header__logo">
-          <svg class="header__logo-icon" width="122" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <a href="#" class="header__tel" href="tel:+78005555555">8-800-555-55-55</a>
+        <div class="header__link-wrapper">
+          <a href="index.html" class="header__logo">
+            <svg class="header__logo-icon" width="122" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <a class="header__tel" href="tel:+78005555555">8-800-555-55-55</a>
+        </div>
         <div class="header__info">
           <p class="header__city">Омск</p>
           <div class="header__info-container">
@@ -35,7 +37,7 @@
             </ul>
             <h1 class="header__name">Фитнес центр</h1>
           </div>
-          <button class="header__button" type="button">Купить абонемент</button>
+          <a href="#offer" class="header__button">Купить абонемент</a>
         </div>
         <picture>
           <source type="image/webp" media="(max-width: 1199px)"
@@ -56,11 +58,14 @@
           <h2 class="description__title">Тренажерный зал</h2>
           <p class="description__area-text">Просторный зал площадью 900&nbsp;кв/м</p>
           <div class="description__text-wrapper">
-            <p data-part="1" class="description__text">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место
-              для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для
+            <p data-part="1" class="description__text">Supergym&nbsp;- самый большой фитнес центр за&nbsp;Уралом
+              и&nbsp;идеальное место
+              для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием
+              для
               всех спортсменов.
             </p>
-            <p data-part="2" class="description__text">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40
+            <p data-part="2" class="description__text">В&nbsp;зале расположены отдельная зона для Crossfit
+              и&nbsp;кардио-зона с&nbsp;40
               тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых
               занятий.
             </p>
@@ -91,7 +96,7 @@
     </div>
     <div class="main__wrapper wrapper wrapper--grey">
       <div class="main__container container">
-        <section class="main__offer offer">
+        <section class="main__offer offer" id="offer">
           <picture class="offer__sub-img">
             <source type="image/webp" media="(max-width: 1199px)"
               srcset="./img/objects/pancake-tablet.webp 1x, ./img/objects/pancake-tablet@2x.webp 2x">
@@ -109,7 +114,7 @@
               <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">6 Месяцев</button>
               <button class="tabs__control btn" type="button" data-tabs="control" data-index="2">12 Месяцев</button>
             </div>
-            <div class="tabs__content" data-tabs="content" style="height: 374px;">
+            <div class="tabs__content" data-tabs="content" style="height: 448px;">
               <div class="tabs__element is-active" data-tabs="element">
                 <ul class="tabs__element-list">
                   <li class="tabs__element-item" tabindex="0">
@@ -317,7 +322,7 @@
                 </ul>
               </div>
             </li>
-            <li class="coaches__swiper-item swiper-slide" tabindex="0">
+            <li class="coaches__swiper-item swiper-slide">
               <h3 class="coaches__name">Рыжик</h3>
               <picture>
                 <source type="image/webp" srcset="./img/coaches/coach5.webp 1x, ./img/coaches/coach5@2x.webp 2x">
@@ -334,7 +339,7 @@
                 </ul>
               </div>
             </li>
-            <li class="coaches__swiper-item swiper-slide" tabindex="0">
+            <li class="coaches__swiper-item swiper-slide">
               <h3 class="coaches__name">Барсик</h3>
               <picture>
                 <source type="image/webp" srcset="./img/coaches/coach6.webp 1x, ./img/coaches/coach6@2x.webp 2x">
@@ -351,7 +356,7 @@
                 </ul>
               </div>
             </li>
-            <li class="coaches__swiper-item swiper-slide" tabindex="0">
+            <li class="coaches__swiper-item swiper-slide">
               <h3 class="coaches__name">Моня Лизя</h3>
               <picture>
                 <source type="image/webp" srcset="./img/coaches/coach7.webp 1x, ./img/coaches/coach7@2x.webp 2x">
@@ -368,7 +373,7 @@
                 </ul>
               </div>
             </li>
-            <li class="coaches__swiper-item swiper-slide" tabindex="0">
+            <li class="coaches__swiper-item swiper-slide">
               <h3 class="coaches__name coaches__name--dark">Борис</h3>
               <picture>
                 <source type="image/webp" srcset="./img/coaches/coach8.webp 1x, ./img/coaches/coach8@2x.webp 2x">
@@ -387,7 +392,8 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="swiper-button-prev swiper-button-prev-one" aria-label="Предыдущий тренер."></button>
+        <button type="button" class="swiper-button-prev swiper-button-prev-one"
+          aria-label="Предыдущий тренер."></button>
         <button type="button" class="swiper-button-next swiper-button-next-one" aria-label="Следующий тренер."></button>
       </section>
     </div>
@@ -406,6 +412,22 @@
                 <p class="features__item-text">Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
+            <li class="features__item features__item--cars">
+              <div class="features__item-container">
+                <p class="features__item-number">70 </p>
+                <p class="features__item-number-info">машин</p>
+              </div>
+              <div class="features__item-container">
+                <p class="features__item-type">Собственная парковка</p>
+                <p class="features__item-text">Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+              </div>
+            </li>
+
+            <li class="features__item features__item--trainers">
+              <p class="features__item-number">100</p>
+              <p class="features__item-type">Тренажеров</p>
+              <p class="features__item-text">Современные тренажеры на&nbsp;все группы мышц</p>
+            </li>
             <li class="features__item features__item--comfort">
               <div class="features__item-container">
                 <p class="features__item-number">350</p>
@@ -416,21 +438,6 @@
                 <p class="features__item-text">Просторные раздевалки,
                   душевые, фен, Wi-Fi, кулеры
                 </p>
-              </div>
-            </li>
-            <li class="features__item features__item--trainers">
-              <p class="features__item-number">100</p>
-              <p class="features__item-type">Тренажеров</p>
-              <p class="features__item-text">Современные тренажеры на&nbsp;все группы мышц</p>
-            </li>
-            <li class="features__item features__item--cars">
-              <div class="features__item-container">
-                <p class="features__item-number">70 </p>
-                <p class="features__item-number-info">машин</p>
-              </div>
-              <div class="features__item-container">
-                <p class="features__item-type">Собственная парковка</p>
-                <p class="features__item-text">Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
               </div>
             </li>
             <li class="features__item features__item--exp">
@@ -499,7 +506,9 @@
                   width="80" height="80" alt="">
               </picture>
               <p class="feedback__name">Анна Орлова</p>
-              <p class="feedback__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+              <p class="feedback__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда
+                чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                очередей&raquo;
               </p>
             </li>
             <li class="feedback__swiper-item swiper-slide" tabindex="0">
@@ -509,7 +518,9 @@
                   width="80" height="80" alt="">
               </picture>
               <p class="feedback__name">Анна Орлова</p>
-              <p class="feedback__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+              <p class="feedback__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда
+                чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                очередей&raquo;
               </p>
             </li>
             <li class="feedback__swiper-item swiper-slide" tabindex="0">
@@ -519,7 +530,9 @@
                   width="80" height="80" alt="">
               </picture>
               <p class="feedback__name">Анна Орлова</p>
-              <p class="feedback__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+              <p class="feedback__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда
+                чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
+                очередей&raquo;
               </p>
             </li>
           </ul>
@@ -547,7 +560,7 @@
                 <input data-input="tel" name="tel" type="tel" placeholder="Телефон"
                   aria-label="Поле для ввода телефона.">
               </div>
-              <button type="submit" class="contacts__button">Оставить заявку</button>
+              <button type="submit" class="contacts__button">Отправить</button>
             </form>
           </div>
         </div>
@@ -591,7 +604,7 @@
             </li>
             <li class="footer__section"><a href="#" class="footer__section-link">Услуги</a></li>
             <li class="footer__section"><a href="#" class="footer__section-link">Абонементы</a></li>
-            <li class="footer__section"><a href="#" class="footer__section-link">Акции</a></li>
+            <li class="footer__section" data-break><a href="#" class="footer__section-link">Акции</a></li>
             <li class="footer__section"><a href="#" class="footer__section-link">Тренеры</a></li>
             <li class="footer__section"><a href="#" class="footer__section-link">Расписание</a></li>
           </ul>
@@ -622,6 +635,9 @@
       </div>
     </div>
   </footer>
+  <div class="form-succes">
+    <p>Вам скоро перезвонят. Подождите пожалуйста.</p>
+  </div>
   <script src="js/main.min.js" defer></script>
   <script src="js/vendor.min.js" defer></script>
 </body>

@@ -1,14 +1,15 @@
 .description {
-  padding: 120px 0 7px 60px;
-  max-width: 89%;
+  padding: 120px 0 236px 60px;
+  max-width: 89.06%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
+  position: relative;
 
   @include vp-1199 {
-    padding: 100px 21px 16px;
+    padding: 100px 21px 183px;
     flex-direction: column;
     align-items: center;
     max-width: none;
@@ -20,8 +21,8 @@
   }
 
   &__text-sector {
-    max-width: 32.32%;
-    margin-right: 7.72%;
+    max-width: 33.32%;
+    margin-right: 6.72%;
 
     @include vp-1199 {
       max-width: none;
@@ -79,7 +80,8 @@
     margin: 40px 0 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
+    letter-spacing: -0.01em;
 
     @include vp-1199 {
       text-align: center;
@@ -111,6 +113,7 @@
 
   & picture {
     width: 59.93%;
+    height: auto;
 
     @include vp-1199 {
       width: 100%;
@@ -124,7 +127,6 @@
 
   &__img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 
     @include vp-767 {
@@ -133,25 +135,29 @@
   }
 
   &__video {
-    position: relative;
-    top: -113px;
-    left: 8px;
+    position: absolute;
+    top: 407px;
+    left: 53.3%;
+    transform: translateX(-50%);
     margin: 0 auto;
-    width: 33.1%;
+    width: 31.37%;
     height: fit-content;
     line-height: 0;
-    padding-top: 20.73%;
+    padding-top: 19.73%;
 
     @include vp-1199 {
-      width: 39.23%;
-      top: -84px;
-      left: 0;
-      padding-top: 24.63%;
+      width: 37%;
+      top: 68.7%;
+      left: 50%;
+      padding-top: 23.4%;
     }
 
     @include vp-767 {
       width: 100vw;
-      top: 0;
+      top: none;
+      position: relative;
+      bottom: 0;
+      left: 0;
       transform: translateX(-15px);
       padding-top: 57.59%;
     }

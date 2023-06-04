@@ -22,11 +22,12 @@
     text-align: center;
     margin: 0 0 37px;
     color: #102654;
+    letter-spacing: 0.03em;
 
     @include vp-1199 {
       font-size: 42px;
       line-height: 50px;
-      margin-bottom: 40px;
+      margin-bottom: 42px;
     }
 
     @include vp-767 {
@@ -80,7 +81,10 @@
     margin: 0;
 
     @include vp-767 {
-      line-height: 160%;
+      line-height: 140%;
+      padding: 0 0 7px 3px;
+      display: flex;
+      align-items: flex-end;
     }
   }
 
@@ -88,6 +92,7 @@
     font-size: 16px;
     line-height: 140%;
     margin: 0;
+    grid-column: 2/3;
 
     @include vp-767 {
       grid-column: 1/3;

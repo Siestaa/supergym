@@ -2,13 +2,13 @@
   max-width: 89%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 43.1% 56.9%;
+  grid-template-columns: 500px 1fr;
   padding: 118px 0 107px;
 
   @include vp-1199 {
     max-width: 100%;
-    grid-template-columns: 43.06% 56.94%;
-    padding: 100px 21px;
+    grid-template-columns: 292px 1fr;
+    padding: 97px 21px 100px;
   }
 
   @include vp-767 {
@@ -22,17 +22,19 @@
     color: #ffffff;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: repeat(4, 1fr);
+    align-content: flex-start;
+    height: 100%;
     gap: 0 50px;
 
     @include vp-1199 {
       padding: 51px 45px 38px;
       gap: 0 29px;
-      grid-template-rows: 1fr 1fr auto auto;
+      grid-template-rows: repeat(auto-fill, fit-content(50%));
+      height: 100%;
     }
 
     @include vp-767 {
-      padding: 50px 44px 50px;
+      padding: 50px 44px 52px;
     }
   }
 
@@ -43,12 +45,21 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: $ff-main-object;
-    grid-row: 1/3;
     margin: 0;
     text-align: center;
 
+    &:first-of-type {
+      grid-row: 1/3;
+    }
+
     @include vp-1199 {
       font-size: 48px;
+      height: fit-content;
+    }
+
+    @include vp-767 {
+      text-align: start;
+      padding-left: 7px;
     }
   }
 
@@ -57,9 +68,12 @@
     flex-direction: column;
     font-size: 18px;
     line-height: 150%;
+    margin-bottom: 5px;
 
     @include vp-1199 {
       align-items: stretch;
+      height: fit-content;
+      margin-bottom: 5px;
     }
   }
 
@@ -115,9 +129,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 8px;
+    width: fit-content;
 
     @include vp-1199 {
       margin: 0;
+      height: fit-content;
     }
   }
 
@@ -151,11 +167,11 @@
     font-size: 18px;
     line-height: 150%;
     grid-column: 1/3;
-    margin: 18px 0 0;
+    margin: 18px 0 43px;
 
     @include vp-1199 {
       font-size: 12px;
-      margin: 7px 0 26px;
+      margin: 3px 0 28px;
     }
   }
 
@@ -164,7 +180,7 @@
     line-height: 14px;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 22px 0;
+    padding: 24px 0;
     grid-column: 1/3;
     display: flex;
     align-items: center;
@@ -172,6 +188,8 @@
     border: 4px solid #ffffff;
     margin-top: 3px;
     margin-bottom: 12px;
+    text-align: center;
+    user-select: none;
 
     @include vp-1199 {
       font-size: 10px;

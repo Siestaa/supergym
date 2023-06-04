@@ -14,11 +14,11 @@
     padding: 66px 170px 47px 15.06%;
 
     @include vp-1199 {
-      padding: 63px 0 68px;
+      padding: 63px 0 69px;
     }
 
     @include vp-767 {
-      padding: 63px 15px 68px;
+      padding: 63px 15px 69px;
     }
   }
 
@@ -63,24 +63,29 @@
     &--form {
       font-weight: 800;
       color: #ffffff;
-      margin: 0 0 24px;
+      margin: 0 0 27px;
+      min-width: 389px;
 
       @include vp-1199 {
         font-weight: 700;
-        margin-bottom: 29px;
+        margin-bottom: 31px;
+      }
+
+      @include vp-767 {
+        margin-bottom: 37px;
       }
     }
 
     &--info {
       font-weight: 600;
-      margin: 0 0 21px;
+      margin: 0 0 37px;
 
       @include vp-1199 {
         margin-bottom: 32px;
       }
 
       @include vp-767 {
-        margin-bottom: 34px;
+        margin-bottom: 36px;
       }
     }
   }
@@ -88,10 +93,10 @@
   &__form-field {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 23px 30px;
+    gap: 29px 30px;
 
     @include vp-1199 {
-      gap: 23px 60px;
+      gap: 30px 60px;
     }
 
     @include vp-767 {
@@ -109,6 +114,8 @@
       border-bottom: 1px solid #74819c;
       width: 100%;
       color: #ffffff;
+      padding-bottom: 5px;
+      padding-left: 0;
 
 
       @include vp-767 {
@@ -163,7 +170,7 @@
     width: 100%;
     background: #ffffff;
     color: #102654;
-    padding: 56px 15.22% 47px 120px;
+    padding: 56px 15.22% 64px 120px;
     border-top: 1px solid #74819c;
 
     @include vp-1199 {
@@ -171,7 +178,7 @@
     }
 
     @include vp-767 {
-      padding: 63px 15px 65px;
+      padding: 63px 15px 63px;
     }
   }
 
@@ -198,14 +205,17 @@
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 19px 120px;
+    grid-template-columns: minmax(230px, auto) auto;
+    gap: 18px 60px;
     position: relative;
+    margin: 0;
+    width: fit-content;
 
     @include vp-1199 {
       gap: 20px 50px;
       margin: 0;
       grid-template-columns: auto auto;
+      width: 100%;
     }
 
     @include vp-767 {
@@ -220,7 +230,7 @@
       height: 90%;
       position: absolute;
       background-color: #74819c;
-      left: 50%;
+      left: 58%;
       top: 50%;
       transform: translate(50%, -50%);
 
@@ -240,9 +250,11 @@
     flex-direction: column;
     gap: 3px;
     color: #102654;
+    padding-left: 5px;
 
     @include vp-1199 {
       gap: 10px;
+      padding-left: 0;
     }
 
     @include vp-767 {
@@ -282,6 +294,7 @@
     font-style: normal;
     margin: 0;
     color: #102654;
+    width: fit-content;
 
     @include vp-1199 {
       font-size: 18px;

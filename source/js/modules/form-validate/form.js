@@ -61,6 +61,8 @@ export class Form {
   _onFormSubmit(event, callback = null) {
     if (this.validateForm(event.target) && callback) {
       this._callbacks[callback].successCallback(event);
+      document.querySelector('.form-succes').classList.add('form-succes--view');
+      setTimeout(() => document.querySelector('.form-succes').classList.remove('form-succes--view'), 2000);
       if (this._callbacks[callback].reset) {
         setTimeout(() => {
           this.reset(event.target);

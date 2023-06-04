@@ -3,59 +3,17 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {onPlay} from './functions/video';
 import {initTabs} from './modules/tabs/init-tabs';
-
-// swiper.js
 import Swiper, {Navigation, Pagination} from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
-
-export const swiperOne = new Swiper('.swiper-one', {
-  loop: true,
-  slidesPerView: 1,
-  grid: {
-    rows: 1,
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    // when window width is >= 480px
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-  },
-  spaceBetween: 0,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next-one',
-    prevEl: '.swiper-button-prev-one',
-  },
-});
-
-export const swiperTwo = new Swiper('.swiper-two', {
-  loop: false,
-  slidesPerView: 1,
-  grid: {
-    rows: 1,
-  },
-  spaceBetween: 0,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next-two',
-    prevEl: '.swiper-button-prev-two',
-  },
-});
+// swiper.js
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
-
   iosVhFix();
+  initTabs();
 
   // Modules
   // ---------------------------------
@@ -63,9 +21,54 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+
+
+    Swiper.use([Navigation, Pagination]);
+
+    const swiperOne = new Swiper('.swiper-one', {
+      loop: true,
+      slidesPerView: 1,
+      grid: {
+        rows: 1,
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        // when window width is >= 480px
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+      spaceBetween: 0,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-one',
+        prevEl: '.swiper-button-prev-one',
+      },
+    });
+
+    const swiperTwo = new Swiper('.swiper-two', {
+      loop: false,
+      slidesPerView: 1,
+      grid: {
+        rows: 1,
+      },
+      spaceBetween: 0,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-two',
+        prevEl: '.swiper-button-prev-two',
+      },
+    });
+    swiperOne();
+    swiperTwo();
+
     initModals();
     onPlay();
-    initTabs();
     const form = new Form();
     form.init();
     window.form = form;

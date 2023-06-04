@@ -15,7 +15,7 @@
   }
 
   &__nav {
-    max-width: 89%;
+    max-width: 89.06%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 34.48% auto;
@@ -28,11 +28,22 @@
     }
   }
 
+  &__link-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 1/3;
+    gap: 15px;
+    z-index: 1;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
   &__logo {
     line-height: 0;
     width: fit-content;
     height: fit-content;
     transition: 0.4s;
+    margin-right: auto;
 
     &:hover,
     &:focus-within {
@@ -110,6 +121,7 @@
       font-size: 30px;
       line-height: 41px;
       margin: 51px 0 3px 0;
+      letter-spacing: 0.07em;
     }
 
     @include vp-767 {
@@ -122,7 +134,8 @@
   &__info-container {
     display: flex;
     margin-bottom: 50px;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 
     @include vp-1199 {
       margin-bottom: 38px;
@@ -130,6 +143,7 @@
 
     @include vp-767 {
       margin-bottom: 23px;
+      justify-content: center;
     }
   }
 
@@ -139,7 +153,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-    margin: 0 0 34px 18px;
+    margin: 0 0 34px auto;
     align-self: flex-end;
     text-align: end;
 
@@ -159,23 +173,27 @@
     line-height: 110px;
     text-transform: uppercase;
     font-family: $ff-main-object;
-    width: 200px;
+    width: 268px;
     text-align: end;
     margin: 0;
     letter-spacing: 0.06em;
-    flex-grow: 1;
 
     @include vp-1199 {
       font-size: 74px;
       line-height: 86px;
       text-transform: none;
       font-weight: 900;
-      letter-spacing: 0.01em;
+      letter-spacing: 0.02em;
+      width: 210px;
+    }
+
+    @include vp-767 {
+      width: 200px;
     }
   }
 
   &__button {
-    padding: 20px 56px;
+    padding: 20px 0;
     background: transparent;
     border: 4px solid #ffffff;
     font-weight: 700;
@@ -184,9 +202,12 @@
     text-transform: uppercase;
     color: #ffffff;
     box-sizing: border-box;
-    width: fit-content;
     align-self: flex-end;
     cursor: pointer;
+    width: 57.5%;
+    margin-right: 5px;
+    text-align: center;
+    user-select: none;
 
     &:hover,
     &:focus-within {
@@ -196,7 +217,7 @@
 
     @include vp-1199 {
       padding: 20px 30px;
-      margin-right: -6px;
+      margin-right: -2px;
     }
 
     @include vp-767 {
@@ -212,7 +233,6 @@
       margin: 0;
       max-width: 324px;
       max-height: 390px;
-      transform: translateX(6px);
     }
 
     @include vp-767 {
